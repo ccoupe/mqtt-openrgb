@@ -1,0 +1,11 @@
+[Unit]
+Description=Face Recognition Websocket
+After=network-online.target
+
+[Service]
+User=ccoupe
+ExecStart=/home/ccoupe/Projects/iot/openrgb/mqttrgb.sh
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
